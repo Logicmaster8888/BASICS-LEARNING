@@ -1,0 +1,38 @@
+/* Variables */
+:root {
+    --icon_width: 79px;
+  --icon_height: 79px;
+  --num_icons: 9;
+  }
+  
+  /* Global Styles */
+  html, body{
+    height: 100%;
+  }
+  body {
+    background: linear-gradient(45deg, grey, 0%, lightgray 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Slots Container Styles */
+  .slots {
+    width: calc(3 * var(--icon_width));
+    height: calc(3 * var(--icon_height));
+    border: 1px solid black;
+    padding: calc(0.3 * var(--icon_height));
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Reel Styles */
+  .reel {
+    border: 1px solid black;
+      width: var(--icon_width);
+      height: calc(3 * var(--icon_height));
+    background-image: url(https://assets.codepen.io/439000.slotreel.webp);
+    background-repeat: repeat-y;
+    background_position: 0 0;
+  }
+  
+  
+  
